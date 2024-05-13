@@ -74,3 +74,98 @@ footer {
 .phone-number:hover {
     background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
 }
+#about {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 20px; /* Ajusta el margen según sea necesario */
+}
+
+#about .text h1 {
+    font-size: 3em; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color del texto (puedes cambiarlo a tu gusto) */
+    font-family: "Arial", sans-serif; /* Fuente del texto */
+}
+
+#about .text p {
+    font-size: 1.5em; /* Tamaño de fuente grande */
+    color: #666; /* Color del texto (puedes cambiarlo a tu gusto) */
+    font-family: "Arial", sans-serif; /* Fuente del texto */
+}
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    padding: 10px; /* Ajusta el padding según sea necesario */
+    box-sizing: border-box;
+    width: 100%;
+    display: none; /* Inicialmente oculta todos los divs */
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Agrega una transición suave de opacidad */
+}
+.slide.active {
+    display: block; /* Muestra el div activo */
+    opacity: 1; /* Cambia la opacidad a 1 para hacerlo visible */
+}
+
+.carousel img {
+       width: 100%;
+    height: auto;
+}
+.carousel .slide.active img {
+    display: block; /* Muestra solo la imagen dentro del slide activo */
+}
+.horizontal-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+}  
+#SobreNosotros {
+    display: flex;
+    justify-content: center;
+}
+.contenedor-horizontal {
+    display: flex; /* Establece el contenedor como un contenedor flex */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between;
+}
+.contenedor-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.texto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img-nosotros {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+}
