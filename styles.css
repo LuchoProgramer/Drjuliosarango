@@ -4,10 +4,25 @@ body {
     padding: 0;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    max-height: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    border-radius: 20%;
 }
 
 nav ul {
@@ -26,13 +41,36 @@ nav ul li a {
     text-decoration: none;
 }
 
-section {
-    padding: 20px;
-}
-
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
+}
+
+.main-nav {
+    display: grid;
+    grid-template-columns: repeat(7, auto); /* Una columna para cada elemento del menú */
+    gap: 20px; /* Espacio entre columnas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-top: 30px; /* Espacio entre el menú y el contenido superior */
+}
+.cta-button {
+    margin-top: 20px; /* Margen superior de 20px */
+    margin-right: 20px; /* Margen derecho de 20px */
+    text-align: right; /* Alinea el contenido a la derecha */
+}
+
+.phone-number {
+    display: inline-block; /* Permite aplicar estilos de bloque */
+    padding: 10px 20px; /* Ajusta el relleno para el tamaño del botón */
+    border-radius: 20px; /* Borde redondeado */
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.phone-number:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
 }
