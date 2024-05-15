@@ -193,11 +193,21 @@ footer {
     justify-content: space-between;
     margin-bottom: 20px; /* Espacio entre filas */
 }
-
 .grid-item {
-    flex-basis: calc(33.33% - 10px); /* Tamaño de cada elemento, restando el espacio entre ellos */
-    background-color: #f2f2f2; /* Color de fondo de cada elemento */
+    flex-basis: calc(33.33% - 10px);
+    background-color: #f2f2f2;
     padding: 20px;
+    display: flex; /* Utiliza flexbox para alinear elementos verticalmente */
+    flex-direction: column; /* Apila los elementos en una columna */
+    justify-content: center; /* Centra verticalmente los elementos */
+    text-align: center; /* Centra horizontalmente el texto */
+}
+.grid-item img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px; /* Espacio alrededor de cada imagen */
 }
 
 /* Estilo para los elementos de la segunda fila */
