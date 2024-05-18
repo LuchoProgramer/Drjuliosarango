@@ -110,7 +110,35 @@
                 </div>
             </div>
         </div>
+
     </section>
+    <section id="Ubicación">
+        <h1>Mi página con mapa</h1>
+    
+        <!-- Contenedor del mapa -->
+        <div id="map">
+            <!-- Aquí se incrusta el iframe proporcionado -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d249.36203251509923!2d-78.4960920058312!3d-0.20604971205576325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1716007330656!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <!-- Llamado a la acción para indicar cómo llegar -->
+        <div>
+            <h2>¡Visítanos!</h2>
+            <p>Estamos ubicados en:</p>
+            <p>Dirección de tu empresa</p>
+            <p>
+                <button id="directionsButton">Cómo llegar</button>
+            </p>
+        </div>
+    
+        <!-- Script JavaScript para manejar el botón de "Cómo llegar" -->
+        <script>
+            document.getElementById('directionsButton').addEventListener('click', function() {
+                window.location.href = 'https://www.google.com/maps/dir/?api=1&destination=Dirección+de+tu+empresa';
+            });
+        </script>
+    </section>
+    
        
     <section id="contact">
         <h2>Contacto</h2>
