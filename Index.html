@@ -34,28 +34,60 @@
     
     <section id="about">
         <div class="content">
-            <div class="horizontal-container">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="slide active"> 
+                        <img src="./Imagenes/Dr. Julio  Sarango Ecuavisa.png" alt="Descripción de la imagen 1">
+                    </div>
+                    <div class="slide">
+                        <img src="./Imagenes/Dr. Julio Sarango Derecho penal.png" alt="Descripción de la imagen 2">
+                    </div>
+                    <div class="slide">
+                        <img src="./Imagenes/Dr. Julio Sarango entrevista medios televisivos.png" alt="Descripción de la imagen 3">
+                    </div>
+                    <!-- Agrega más imágenes según sea necesario -->
+                </div>
                 <div class="text">
                     <h1>Dr. Julio Sarango</h1>
                     <p>Defendiendo tus derechos, protegiendo tu futuro.</p>
                 </div>
-                <div class="carousel-container">
-                    <div class="carousel">
-                        <div class="slide active"> 
-                            <img src="./Imagenes/Dr. Julio  Sarango Ecuavisa.png" alt="Descripción de la imagen 1">
-                        </div>
-                        <div class="slide">
-                            <img src="./Imagenes/Dr. Julio Sarango Derecho penal.png" alt="Descripción de la imagen 2">
-                        </div>
-                        <div class="slide">
-                            <img src="./Imagenes/Dr. Julio Sarango entrevista medios televisivos.png" alt="Descripción de la imagen 3">
-                        </div>
-                        <!-- Agrega más imágenes según sea necesario -->
-                    </div>
-                </div>
             </div>
         </div>
     </section>
+    
+    <style>
+        .content {
+            display: flex;
+            justify-content: center; /* Alinea el contenido horizontalmente */
+            background-color: #f0f0f0; /* Color de fondo */
+            width: 80%; /* Ancho del 80% de la pantalla */
+            margin: 0 auto; /* Centra el contenido horizontalmente */
+            padding: 20px; /* Agrega espacio interno */
+        }
+    
+        .carousel-container {
+            display: flex;
+            flex-direction: column; /* Organiza los elementos en columna */
+            align-items: center; /* Alinea los elementos al centro horizontalmente */
+        }
+    
+        /* Asegúrate de que el carrusel tenga un ancho máximo para que no se desborde */
+        .carousel {
+            max-width: 100%;
+        }
+    
+        /* Asegúrate de que las imágenes del carrusel se ajusten al tamaño máximo del carrusel */
+        .carousel img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .text {
+            text-align: center; /* Centra el texto */
+            margin-top: 20px; /* Agrega espacio entre el carrusel y el texto */
+        }
+    </style>
+    
 
     <section id="SobreNosotros">
         <div class="contenedor-nosotros">
@@ -110,17 +142,17 @@
                 </div>
             </div>
         </div>
-
     </section>
-    <section id="Ubicación">
+
+    <section id="Ubicación" style="text-align: center; background-color: #333; color: white; padding: 20px;">
         <h1>Mi página con mapa</h1>
     
-        <!-- Contenedor del mapa -->
-        <div id="map">
+        <!-- Contenedor del mapa al 80% del ancho de la pantalla con sombra paralela -->
+        <div id="map-container" style="display: inline-block; width: 80%; margin-bottom: 20px; box-shadow: 0px 0px 60px rgba(255, 255, 255, 0.4);">
             <!-- Aquí se incrusta el iframe proporcionado -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d249.36203251509923!2d-78.4960920058312!3d-0.20604971205576325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1716007330656!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d249.36203251509923!2d-78.4960920058312!3d-0.20604971205576325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1716007330656!5m2!1ses-419!2sec" width="100%" height="450" style="border:0;"></iframe>
         </div>
-        
+    
         <!-- Llamado a la acción para indicar cómo llegar -->
         <div>
             <h2>¡Visítanos!</h2>
@@ -139,6 +171,7 @@
         </script>
     </section>
     
+     
        
     <section id="contact">
         <h2>Contacto</h2>
