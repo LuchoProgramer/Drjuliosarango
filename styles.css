@@ -5,11 +5,13 @@ body {
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Para centrar el logo */
+    align-items: center;
+    max-width: 80%; /* Limitando el ancho al 80% */
+    margin: 0 auto; /* Centrar el contenedor en la pantalla */
 }
-
 header {
     background-color: #333;
     color: #fff;
@@ -19,12 +21,12 @@ header {
 .logo {
     float: left;
 }
-
 .logo img {
-    max-height: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    max-width: 150px; /* Ancho máximo del logo */
+    display: block;
+    margin: 0 auto; /* Centrar el logo */
     border-radius: 20%;
 }
-
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -213,4 +215,96 @@ footer {
 /* Estilo para los elementos de la segunda fila */
 .grid-row:last-child .grid-item {
     background-color: #eaeaea; /* Cambia el color de fondo para diferenciar la segunda fila */
+}
+/* Estilos para la sección de contacto */
+#contact {
+    display: flex;
+    width: 80%; /* Nuevo */
+    margin: 0 auto; /* Centrar la sección */
+}
+
+.contact-left,
+.contact-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-left h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-left p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-right .contact-form {
+    text-align: center;
+}
+
+.contact-right .contact-form form {
+    margin: 0 auto; /* Centrar formulario */
+    max-width: 400px; /* Ancho máximo del formulario */
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 100%; /* Ajustar ancho al contenedor */
+    box-sizing: border-box; /* Incluir padding y border en el ancho */
+}
+
+.contact-right .contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Estilos para los botones de contacto */
+.contact-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-buttons a {
+    text-decoration: none;
+}
+
+.whatsapp-button,
+.linkedin-button,
+.call-button {
+    margin: 0 5px; /* Espacio entre los botones */
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+}
+
+.linkedin-button {
+    background-color: #0077B5;
+}
+
+.call-button {
+    background-color: #007bff;
 }
